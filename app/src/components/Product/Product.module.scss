@@ -1,0 +1,73 @@
+@import '../../style/styles.scss';
+
+.p_card {
+    width: calc(25% - 25px);
+    height: auto;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        transition: all 0.2s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    &__image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        background: $white;
+        padding-top: 5px;
+        img {
+            display: block;
+            width: 150px;
+
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $white;
+        color: $black;
+        height: 120px;
+        padding: 0 15px;
+
+        p {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 300;
+        }
+        
+    }
+}
+
+@media (max-width: $screen-lg-min) {
+    .p_card {
+        width: calc(33% - 25px);
+    }
+}
+
+@media (max-width: $screen-md-min) {
+    .p_card {
+        width: calc(50% - 25px);
+    }
+}
+
+@media (max-width: $screen-sm-min) {
+    .p_card {
+        width: calc(90% - 25px);
+        max-width: 400px;
+    }
+}
+

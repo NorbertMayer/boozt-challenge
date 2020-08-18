@@ -1,0 +1,11 @@
+.p_pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    
+    &__pages {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
